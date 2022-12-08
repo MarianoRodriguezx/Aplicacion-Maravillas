@@ -7,13 +7,13 @@ import android.os.Handler
 import android.util.Log
 import android.view.ContextThemeWrapper
 import android.view.MenuItem
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.PopupMenu
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination
 import androidx.navigation.fragment.NavHostFragment
-import com.mariano.projectobase.App
-import com.mariano.projectobase.NavAppDirections
-import com.mariano.projectobase.R
+import com.mariano.projectobase.*
 import com.mariano.projectobase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener, PopupMenu.OnMenuItemClickListener {
@@ -57,6 +57,16 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
             setMenu()
             popup.show()
         }
+
+        var noti_img = findViewById<ImageView>(R.id.noti_img)
+        noti_img.setOnClickListener {
+            goToNotifications()
+        }
+
+        var btn_menu = findViewById<ImageView>(R.id.btn_menu)
+        btn_menu.setOnClickListener {
+            goToProfile()
+        }
     }
 
     override fun onDestinationChanged(
@@ -89,5 +99,11 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         return true
     }
 
+    fun goToNotifications(){
+        startActivity(Intent(this, Notificaciones::class.java))
+    }
 
+    fun goToProfile(){
+        startActivity(Intent(this, Perfil::class.java))
+    }
 }

@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    //Generales
+    <color name="orange">#ffa500</color>
+
     //Colores Aplicación
 
     <color name="fondo">#e6eaf8</color>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".OpcionesPago">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="Selecciona un método de pago"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/paypal"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/paypal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/mastercard"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/mastercard"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/visa"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/visa"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        />
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
