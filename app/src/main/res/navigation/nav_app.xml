@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment"
+    android:id="@+id/nav_app">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mariano.projectobase.views.users.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_home_to_detailHotel"
+            app:destination="@id/detailHotelFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/global_calendar"
+        app:destination="@id/calendarFragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/global_home"
+        app:destination="@+id/homeFragment"
+        app:popUpToInclusive="true"/>
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.mariano.projectobase.views.users.CalendarFragment"
+        android:label="CalendarFragment"
+        tools:layout="@layout/fragment_calendar"/>
+    <fragment
+        android:id="@+id/detailHotelFragment"
+        android:name="com.mariano.projectobase.views.users.DetailHotelFragment"
+        android:label="DetailHotelFragment"
+        tools:layout="@layout/fragment_detail_hotel">
+
+        <argument
+            android:name="name"
+            app:argType="string">
+        </argument>
+
+        <argument
+            android:name="img"
+            app:argType="string">
+        </argument>
+
+        <argument
+            android:name="img2"
+            app:argType="string">
+        </argument>
+
+        <argument
+            android:name="img3"
+            app:argType="string">
+        </argument>
+        <argument
+            android:name="qualification"
+            app:argType="string">
+        </argument>
+        <argument
+            android:name="price"
+            app:argType="string">
+        </argument>
+        <argument
+            android:name="description"
+            app:argType="string">
+        </argument>
+    </fragment>
+    <fragment
+        android:id="@+id/reservarFragment"
+        android:name="com.mariano.projectobase.views.users.ReservarFragment"
+        android:label="ReservarFragment"
+        tools:layout="@layout/fragment_reservar"/>
+
+</navigation>

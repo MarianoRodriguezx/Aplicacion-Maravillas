@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        android:iconTint="@color/black"></item>
+        <!--Agregar la linea de abajo para agregar el icono en el menu-->
+        <!--android:icon=""-->
+
+    <item
+        android:id="@+id/calendar"
+        android:enabled="true"
+        android:icon="@drawable/calendar"></item>
+
+    <item
+        android:id="@+id/outlet"
+        android:enabled="true"
+        android:icon="@drawable/outlet"></item>
+
+    <item
+        android:id="@+id/fav"
+        android:enabled="true"
+        android:icon="@drawable/star"></item>
+
+</menu>
