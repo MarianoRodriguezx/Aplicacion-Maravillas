@@ -16,7 +16,9 @@ import androidx.navigation.fragment.NavHostFragment
 import com.mariano.projectobase.*
 import com.mariano.projectobase.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedListener, PopupMenu.OnMenuItemClickListener {
+class MainActivity : AppCompatActivity(),
+    NavController.OnDestinationChangedListener,
+    PopupMenu.OnMenuItemClickListener {
 
     private lateinit var navController: NavController
     private lateinit var popup: PopupMenu
@@ -39,6 +41,14 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
                 R.id.calendar -> {
                     navController.navigate(NavAppDirections.globalCalendar())
+                }
+
+                R.id.outlet -> {
+                    navController.navigate(NavAppDirections.globalPromociones())
+                }
+
+                R.id.fav -> {
+                    navController.navigate(NavAppDirections.globalFavorites())
                 }
             }
             return@setOnItemSelectedListener true
@@ -63,10 +73,10 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
             goToNotifications()
         }
 
-        var btn_menu = findViewById<ImageView>(R.id.btn_menu)
+        /*var btn_menu = findViewById<ImageView>(R.id.btn_menu)
         btn_menu.setOnClickListener {
             goToProfile()
-        }
+        }*/
     }
 
     override fun onDestinationChanged(
@@ -81,6 +91,14 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
 
         when(p0.itemId)
         {
+            R.id.cuenta -> {
+                navController.navigate((NavAppDirections.globalProfile()))
+            }
+
+            R.id.metodos -> {
+                navController.navigate((NavAppDirections.globalMetodos()))
+            }
+
             R.id.logout -> {
 
                 val app = App.getInstance()
@@ -103,7 +121,7 @@ class MainActivity : AppCompatActivity(), NavController.OnDestinationChangedList
         startActivity(Intent(this, Notificaciones::class.java))
     }
 
-    fun goToProfile(){
+    /*fun goToProfile(){
         startActivity(Intent(this, Perfil::class.java))
-    }
+    }*/
 }

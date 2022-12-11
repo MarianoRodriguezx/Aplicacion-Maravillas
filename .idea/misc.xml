@@ -3,6 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/activity_opciones_pago.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/activity_perfil.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/activity_qrcode.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/activity_validando.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_add_metodos.xml" value="0.1" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_calendar.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_codigoqr.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_detail_hotel.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_favoritos.xml" value="0.1" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_final.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_metodos_pago.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_promociones.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_reservar.xml" value="0.16" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/fragment_validacion.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/item_calendario.xml" value="0.33" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/item_hotel.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/layout/item_hotel_discount.xml" value="0.2" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/menu/bottom_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/Mariano Rodriguez/Documents/GitHub/Aplicacion-Maravillas/app/src/main/res/menu/menu_superior.xml" value="0.2" />
         <entry key="..\:/Users/Mariano Rodriguez/Documents/ProjectoBase/app/src/main/res/drawable/border_circle.xml" value="0.161" />
         <entry key="..\:/Users/Mariano Rodriguez/Documents/ProjectoBase/app/src/main/res/drawable/border_menu.xml" value="0.152" />
         <entry key="..\:/Users/Mariano Rodriguez/Documents/ProjectoBase/app/src/main/res/drawable/line.xml" value="0.161" />

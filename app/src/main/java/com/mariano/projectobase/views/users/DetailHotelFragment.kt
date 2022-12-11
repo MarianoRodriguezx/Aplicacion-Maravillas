@@ -21,7 +21,7 @@ class DetailHotelFragment : BaseFragment<FragmentDetailHotelBinding>() {
     override fun setUpViews() {
         setData()
 
-        binding.next.setOnClickListener {  }
+        binding.next.setOnClickListener { reservar() }
     }
 
     override fun observeData() {
@@ -46,7 +46,8 @@ class DetailHotelFragment : BaseFragment<FragmentDetailHotelBinding>() {
 
     private fun reservar()
     {
-
+        val action = DetailHotelFragmentDirections.detailHotelFragmentToReservarFragment()
+        navController.navigate(action)
     }
 
     private fun setCarousel()

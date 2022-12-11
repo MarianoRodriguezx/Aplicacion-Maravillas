@@ -1,11 +1,9 @@
 package com.mariano.projectobase.views.users
 
-import android.content.Intent
 import android.view.View
-import com.mariano.projectobase.databinding.FragmentDetailHotelBinding
+import android.widget.Toast
 import com.mariano.projectobase.databinding.FragmentReservarBinding
 import com.mariano.projectobase.views.BaseFragment
-import com.mariano.projectobase.views.MainActivity
 
 class ReservarFragment : BaseFragment<FragmentReservarBinding>() {
 
@@ -13,19 +11,34 @@ class ReservarFragment : BaseFragment<FragmentReservarBinding>() {
         get() = FragmentReservarBinding.inflate(layoutInflater)
 
     override fun setUpViews() {
-        binding.dateRes.setOnClickListener{
-            seleccion()
-        }
+
         binding.submit.setOnClickListener {
+            if (binding.totalPer.text.isNullOrEmpty())
+            {
+
+            }
+
+            else
+            {
+                onDestiny()
+            }
 
         }
+    }
+
+    private fun onDestiny()
+    {
+        val action = ReservarFragmentDirections.reservarFragmentToMetodosPagoFragment()
+        navController.navigate(action)
     }
 
     override fun observeData() {
 
     }
 
-    private fun seleccion()
+
+
+        private fun seleccion()
     {
         binding.datepk.visibility = View.VISIBLE
         binding.opt.visibility = View.GONE

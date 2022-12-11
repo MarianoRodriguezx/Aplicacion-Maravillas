@@ -21,6 +21,21 @@
         app:popUpToInclusive="true"/>
 
     <action
+        android:id="@+id/global_favorites"
+        app:destination="@id/favoritosFragment"
+        app:popUpToInclusive="true"/>
+
+    <action
+        android:id="@+id/global_promociones"
+        app:destination="@+id/promocionesFragment"
+        app:popUpToInclusive="true"></action>
+
+    <action
+        android:id="@+id/global_metodos"
+        app:destination="@id/add_Metodos_Fragment"
+        app:popUpToInclusive="true"/>
+
+    <action
         android:id="@+id/global_home"
         app:destination="@+id/homeFragment"
         app:popUpToInclusive="true"/>
@@ -29,7 +44,11 @@
         android:id="@+id/calendarFragment"
         android:name="com.mariano.projectobase.views.users.CalendarFragment"
         android:label="CalendarFragment"
-        tools:layout="@layout/fragment_calendar"/>
+        tools:layout="@layout/fragment_calendar">
+        <action
+            android:id="@+id/action_calendarFragment_to_codigoQrFragment2"
+            app:destination="@id/codigoQrFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailHotelFragment"
         android:name="com.mariano.projectobase.views.users.DetailHotelFragment"
@@ -67,11 +86,78 @@
             android:name="description"
             app:argType="string">
         </argument>
+        <action
+            android:id="@+id/detailHotelFragment_to_reservarFragment"
+            app:destination="@id/reservarFragment" />
     </fragment>
     <fragment
         android:id="@+id/reservarFragment"
         android:name="com.mariano.projectobase.views.users.ReservarFragment"
         android:label="ReservarFragment"
-        tools:layout="@layout/fragment_reservar"/>
+        tools:layout="@layout/fragment_reservar">
+        <action
+            android:id="@+id/reservarFragment_to_metodos_Pago_Fragment"
+            app:destination="@id/metodos_Pago_Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.mariano.projectobase.views.users.ProfileFragment"
+        android:label="ProfileFragment" />
+
+    <action
+        android:id="@+id/global_profile"
+        app:destination="@id/profileFragment"
+        app:popUpToInclusive="true">
+
+    </action>
+    <fragment
+        android:id="@+id/metodos_Pago_Fragment"
+        android:name="com.mariano.projectobase.views.users.Metodos_Pago_Fragment"
+        android:label="Metodos_Pago_Fragment" >
+        <action
+            android:id="@+id/metodos_Fragment_to_validacionFragment"
+            app:destination="@id/validacionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/validacionFragment"
+        android:name="com.mariano.projectobase.views.users.ValidacionFragment"
+        android:label="ValidacionFragment" >
+        <action
+            android:id="@+id/action_validacionFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.mariano.projectobase.views.users.FinalFragment"
+        android:label="FinalFragment" >
+        <action
+            android:id="@+id/finalFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Metodos_Fragment"
+        android:name="com.mariano.projectobase.views.users.Add_Metodos_Fragment"
+        android:label="Add_Metodos_Fragment" />
+    <fragment
+        android:id="@+id/favoritosFragment"
+        android:name="com.mariano.projectobase.views.users.FavoritosFragment"
+        android:label="FavoritosFragment" />
+    <fragment
+        android:id="@+id/promocionesFragment"
+        android:name="com.mariano.projectobase.views.users.PromocionesFragment"
+        android:label="PromocionesFragment" >
+        <action
+            android:id="@+id/action_promocionesFragment_to_detailHotelFragment"
+            app:destination="@id/detailHotelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/codigoQrFragment"
+        android:name="com.mariano.projectobase.views.users.CodigoQrFragment"
+        android:label="CodigoQrFragment" >
+        <action
+            android:id="@+id/action_codigoQrFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
 
 </navigation>
